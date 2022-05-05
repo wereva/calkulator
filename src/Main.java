@@ -12,27 +12,32 @@ public class Main {
 
         switch (sign){
             case "+":
-                int op;
-                op = operand1 + operamd2;
-                System.out.println(op);
+                int result;
+                result = operand1 + operamd2;
+                System.out.println(result);
                 break;
             case "-":
-                op = operand1 - operamd2;
-                System.out.println(op);
+                result = operand1 - operamd2;
+                System.out.println(result);
                 break;
 
             case "*":
-                op = operand1 * operamd2;
-                System.out.println(op);
+                result = operand1 * operamd2;
+                System.out.println(result);
                 break;
 
             case "/":
-                op = operamd2 / operand1;
-                if (operamd2 !=0) {
-                    System.out.println(op);
+                result = operamd2 / operand1;
+                if (operamd2  !=0) {
+                    System.out.println(result);
                 } else {
                     System.out.println("на ноль делить нельзя");
                 }
+                break;
+
+            default:
+                System.out.println("нет такого знака");
+                break;
         }
     }
 }
